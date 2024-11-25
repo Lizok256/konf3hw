@@ -80,7 +80,7 @@ def evaluate_expression(expression):
             if o_len <3 :
                 raise SyntaxError ("неправильны йоперад для функции len")
 
-            if operands[0][0] == '@' and operands[0][1] == '"' and operandsp[0][o_len-1] == '"':
+            if operands[0][0] == '@' and operands[0][1] == '"' and operands[0][o_len-1] == '"':
                 str_oper = operands[0][2:o_len-2]
                 ret_value = len (str_oper)
             else:
