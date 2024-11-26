@@ -48,7 +48,7 @@ def evaluate_expression(expression):
 
     # Разделяем строку по пробелам, при этом строки в кавычках не будут разделяться
     parts = re.findall(r'@"[^"]*"|\S+', content)
-    if len(parts) < 2:
+    if len(parts) < 3:
         raise SyntaxError(f"Неполное выражение: {expression}")
 
     operation = parts[-1]
@@ -78,7 +78,7 @@ def evaluate_expression(expression):
         else:
             o_len = len (operands[0])
             if o_len <3 :
-                raise SyntaxError ("неправильны йоперад для функции len")
+                raise SyntaxError ("неправильный операнд для функции len")
 
             if operands[0][0] == '@' and operands[0][1] == '"' and operands[0][o_len-1] == '"':
                 str_oper = operands[0][2:o_len-2]

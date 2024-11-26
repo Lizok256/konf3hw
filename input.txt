@@ -1,13 +1,13 @@
 pupu is 46
 pupustr is @"lala"
-summ = ?[pupu 54 +]
+summ = ?[2 3 +]
 del = ?[pupu 5 -]
 #=
 fghfdjhdsj
 tuyuty
 dfhf
 =#
-lenex = ?[ @"45"  '0'  len]
+lenex = ?[ @"papa"  '0'  len]
 powex = ?[2 3 pow]
-array = list( 1, dfdf2, 4 )
-dictinary = { @"lala1" -> array. @"lala2" -> 2. @"lala3" -> 1. }
+array = list( 1, 2, 4 )
+dictinary = { @"lala1" -> @"pupuex". @"lala2" -> 2. @"lala3" -> 1. }
